@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cursusgeld"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="360" Width="445">
+    <Grid Background="Green">
+        <TextBox x:Name="yearTextBox" HorizontalAlignment="Left" Margin="172,125,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="lesHoursTextBox" HorizontalAlignment="Left" Margin="172,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="moneyTextBox" IsReadOnly="True" HorizontalAlignment="Left" Margin="172,193,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Jaar:" HorizontalAlignment="Left" Margin="89,121,0,0" VerticalAlignment="Top"/>
+        <Label Content="Antal Lesuren:" HorizontalAlignment="Left" Margin="38,154,0,0" VerticalAlignment="Top"/>
+        <Label Content="Inschrijvingsgeld" HorizontalAlignment="Left" Margin="18,189,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="numeriek" Content="" HorizontalAlignment="Left" Margin="328,116,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="schrikkeljaar" Content="" HorizontalAlignment="Left" Margin="328,149,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="testButton" Content="Test Numeriek" HorizontalAlignment="Left" Margin="28,256,0,0" VerticalAlignment="Top" Height="37" Width="85" Click="testButton_Click"/>
+        <Button x:Name="calculateButton" IsEnabled="False" Content="Berekenen" HorizontalAlignment="Left" Margin="190,256,0,0" VerticalAlignment="Top" Height="37" Width="84" Click="calculateButton_Click"/>
+        <Button x:Name="closeButton" Content="Afsluiten" HorizontalAlignment="Left" Margin="341,256,0,0" VerticalAlignment="Top" Height="37" Width="84" Click="closeButton_Click"/>
 
     </Grid>
 </Window>
